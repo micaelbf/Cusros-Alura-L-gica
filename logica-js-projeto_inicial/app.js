@@ -1,12 +1,13 @@
 alert ('Boas vindas ao jogo do número secreto');
-let numeroSecreto  = parseInt(Math.random()*10) + 1;
+let vezes = 10;
+let numeroSecreto  = parseInt(Math.random()*vezes) + 1;
 let chute;
 let contador = 1;
 
 // equnato o chute não for igual ao numero secreto.
 while (chute != numeroSecreto){
 
-    chute = prompt('Escolha um número entre 1 e 10');
+    chute = prompt(`Escolha um número entre 1 e ${vezes}`);
 
     // se chute for igual ao numero secreto.
     if (chute == numeroSecreto) {
