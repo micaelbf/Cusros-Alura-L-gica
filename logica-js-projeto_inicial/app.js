@@ -23,14 +23,16 @@ while (chute != numeroSecreto){
     }
 }
 
-let palavraTentativa = contador > 1 ? 'tentativas.' : 'tentativa.';
-alert(`Você acertou, o número secreto é ${chute} com ${contador} ${palavraTentativa}`);
 
 // if (contador > 1) {
 //     alert(`Você acertou, o número secreto é ${chute} com ${contador} tentativas.`);
 // } else{
 //     alert(`Você acertou, o número secreto é ${chute} com ${contador} tentativa.`);
 // }
+let palavraTentativa = contador > 1 ? 'tentativas.' : 'tentativa.';
+alert(`Você acertou, o número secreto é ${chute} com ${contador} ${palavraTentativa}`);
+
+
 
 
 

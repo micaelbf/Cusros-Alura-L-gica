@@ -1,8 +1,10 @@
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Jogo do Número da Sorte';
+function exibirTela(tag, texto){
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
 
-let texto = document.querySelector('p');
-texto.innerHTML = 'Escolha um número entre 1 e 10';
+exibirTela('h1', 'Jogo do Número Secreto');
+exibirTela('p', 'Escolha um número entre 1 e 10');
 
 function verificarChute() {
     console.log('Verificar Chute');
