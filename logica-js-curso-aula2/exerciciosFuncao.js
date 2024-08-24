@@ -55,27 +55,47 @@
 
 //3.2-Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
 
-function calculafatorial(numero){
-    if (numero < 0){
+// function calculafatorial(numero){
+//     if (numero < 0){
 
-        console.log('Fatorial não definido');
-    } else{
-        let resultado = 1;
-        for (let contador = 1; contador <= numero ; contador++){
-        resultado*= contador;
-        }
-    return(resultado);
-    }
-}
+//         console.log('Fatorial não definido');
+//     } else{
+//         let resultado = 1;
+//         for (let contador = 1; contador <= numero ; contador++){
+//         resultado*= contador;
+//         }
+//     return(resultado);
+//     }
+// }
 
-calculafatorial(5);
-let paragrafo =document.querySelector('p','Teste');
+// calculafatorial(5);
+// let paragrafo =document.querySelector('p','Teste');
 
 //3.3-Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
 
+function converterDolarReal(valorDolar) {
+    let cotacaoAtual = 4.80;
+    let valorReal = valorDolar * cotacaoAtual; 
+    return valorReal.toFixed(2);
+}
 
+let valorReal = converterDolarReal(100);
+console.log(valorReal);
 
 //3.4-Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+
+function calcularAreaPerimetroSalaRetangular(altura,largura) {
+
+    let area = altura * largura;
+    let perimetro = 2 * (altura + largura);
+    
+    console.log(area);
+    console.log(perimetro);
+
+}
+
+calcularAreaPerimetroSalaRetangular(3,5)
+
 
 //3.5-Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
 
